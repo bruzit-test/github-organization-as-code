@@ -39,8 +39,7 @@ env:
   GITHUB_OWNER: ${{ inputs.gh_owner || vars.GH_TF_OWNER }}
   GITHUB_APP_ID: ${{ inputs.gh_app_id || vars.GH_TF_APP_ID }}
   GITHUB_APP_INSTALLATION_ID: ${{ inputs.gh_app_installation_id || vars.GH_TF_APP_INSTALLATION_ID }}
-  GITHUB_APP_PEM_FILE: |
-    ${{ secrets.gh_app_pem_file || secrets.GH_TF_APP_PEM_FILE }}
+  GITHUB_APP_PEM_FILE: ${{ secrets.gh_app_pem_file || secrets.GH_TF_APP_PEM_FILE }}
   # Terraform configuration
   TF_WORKSPACE: ${{ inputs.gh_owner || vars.GH_TF_OWNER }}
   TF_VAR_config: ${{ inputs.path && format('../config/{0}', inputs.path) || '../test.yaml' }}

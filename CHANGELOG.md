@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.3.0](https://github.com/bruzit/github-organization-as-code/compare/v0.2.0...v0.3.0) (2026-03-22)
+
+### Features
+
+* make the terraform workflow reusable ([5080276](https://github.com/bruzit/github-organization-as-code/commit/5080276c5e6786bf710d983203939152803a57cb))
+
 ## [0.2.0](https://github.com/bruzit/github-organization-as-code/compare/v0.1.0...v0.2.0) (2026-03-21)
 
 ### Features

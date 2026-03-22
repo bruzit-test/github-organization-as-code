@@ -58,9 +58,9 @@ jobs:
       - name: Checkout the called repository
         uses: actions/checkout@v6
         with:
-          repository: bruzit/github-organization-as-code
+          repository: bruzit-test/github-organization-as-code
       - name: Checkout the caller repository
-        if: github.repository != 'bruzit/github-organization-as-code'
+        if: github.repository != 'bruzit-test/github-organization-as-code'
         uses: actions/checkout@v6
         with:
           path: config
